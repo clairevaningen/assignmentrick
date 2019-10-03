@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <title>DataTable Zero Configuration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+api = "http://localhost:7070/index.html";
+        $(document).ready(function () {
+            $("#airportTable").DataTable();
+        });
+
+
+
+
+       function change()
+{
+
+
+    </script>
+</head>
+
+<body>
+<div class="container">
+    <div class=“row”>
+        <div class=“col-md-12”>
+            <h2>XYZ Airlines</h2>
+
+            <table id="airportTable" class="display" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Type </th>
+                    <th>Is flying?</th>
+                    <th>Airport</th>
+                    <th>Fuel</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Airbus</td>
+                    <td>Yes</td>
+                    <td>Amsterdam <button type="button" onclick="change()" id="button1">Change airport</button></td>
+                    <td>500.000</td>
+                </tr>
+                <tr>
+                    <td>Boeing 747</td>
+                    <td>No</td>
+                    <td>London <button type="button">Change airport</button></td>
+                    <td>500.000</td>
+                </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
